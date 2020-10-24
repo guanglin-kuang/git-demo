@@ -1,0 +1,12 @@
+# Ignore virtual environment files
+.venv
+
+# Ignore complied Python files
+__pycache__
+*.pyc
+
+# Result files
+quotes.csv
+
+# Ignore temp files for git merge conflict
+*.orig
