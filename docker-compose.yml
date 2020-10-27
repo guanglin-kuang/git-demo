@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  scraping:
+    build: .
+    image: scraping_quotes:develop
+    command: "python -c 'import signal; signal.pause()'"
+    volumes:
+      - type: bind
+        source: ./scraping
+        target: /project
