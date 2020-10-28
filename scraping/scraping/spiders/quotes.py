@@ -13,7 +13,7 @@ class QuotesSpider(scrapy.Spider):
         "next_page": '//li[@class="next"]/a/@href',
     }
 
-    num_pages = 10
+    num_pages = 20
 
     def parse(self, response):
         quotes_selector = response.xpath(self.xpaths["quotes"])
